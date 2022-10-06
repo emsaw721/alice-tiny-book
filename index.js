@@ -92,10 +92,15 @@ return inquirer
         name: 'howToContribute',
         message: 'If your app or package allows for contributors, include the guidlines for how they may do so.'
     },
+
 ])
+.then(readMeData => {
+    questions.push(readMeData);
+})
 };
 
 promptQuestions(); 
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
