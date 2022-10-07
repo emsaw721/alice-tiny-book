@@ -17,8 +17,7 @@ function generateMarkdown(data) {
   ## How to Contribute
   ${data.howToContribute}
   ## License
-  ${data.license} 
-  ![Github link](https://choosealicense.com/licenses/${data.license}/)`
+  <a href= 'https://choosealicense.com/licenses/${data.license}/'> ${data.license}</a> `
 }
 
 module.exports = generateMarkdown;
