@@ -1,9 +1,16 @@
-# some project 
-  ![license]('https://img.shields.io/badge/license-MIT-ff69b4')
-  ## Here is a description
-  ## 
-  ## 
-  ## Instructions and screenshots
-  ## 
-  ## 
-  ## MIT 
+# Project Name  
+  ![Github license]('https://img.shields.io/badge/license-MIT-ff69b4')
+  ## Description
+  A small description. 
+  ##Table of Contents 
+  
+  ##Installation 
+  
+  ## Usage
+  Instructions to follow with screenshots. 
+  ## Credits
+  
+  ## How to Contribute
+  
+  ## License
+  MIT 
