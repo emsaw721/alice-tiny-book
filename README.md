@@ -1,13 +1,13 @@
-# Project Name  
-  ![Github license]('https://img.shields.io/badge/license-MIT-ff69b4')
+# A Title  
+  ![Github license]('https://img.shields.io/badge/license-MIT-ff69b4.svg')
   ## Description
-  A small description. 
+  A small descriptoin 
   ##Table of Contents 
-  
+  [Installation](#installation),[Usage](#usage),[Credits](#credits),[License](#license)
   ##Installation 
-  
+  Outline some steps. 
   ## Usage
-  Instructions to follow with screenshots. 
+  Instructions and examples. 
   ## Credits
   
   ## How to Contribute
