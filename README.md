@@ -1,13 +1,14 @@
-# htear 
-  ![Github license](https://img.shields.io/badge/license-Fair-ff69b4.svg)
+# Title 
+  ![Github license](https://img.shields.io/badge/license-GPL-ff69b4.svg)
   ## Description
-  hthatea
-
+  Description
+  ## Installation 
+  
   ## Usage
-  nyeatwghbntea
+  Usage
   ## Credits
   
   ## How to Contribute
-  
+  Contributor instructions
   ## License
-  <a href= 'https://opensource.org/licenses/Fair/'> Fair</a> 
+  <a href= 'https://opensource.org/licenses/GPL/'> GPL</a> 
