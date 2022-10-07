@@ -1,16 +1,17 @@
-# hgfd 
-  ![Github license](https://img.shields.io/badge/license-MIT-ff69b4.svg)
+# Generate a README 
+  !(https://img.shields.io/badge/license-afl-3.0-ff69b4.svg)
   ## Description
-  hgfds
+  The project generates a README using node.js
   ##Table of Contents 
   
   ##Installation 
   
   ## Usage
-  waehngbdfs
+  Here will be some text as well as screenshots
   ## Credits
   
   ## How to Contribute
   
   ## License
-  MIT 
+  afl-3.0 
+  ![Link](https://choosealicense.com/licenses/afl-3.0/)
