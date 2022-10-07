@@ -35,17 +35,17 @@ return inquirer
             }
         }
     },
-    { 
-        type: 'checkbox',
-        name: 'tableOfContents',
-        message: 'Which sections would you like to add to the table of contents?',
-        choices: ['[Installation](#installation)', '[Usage](#usage)', '[Credits](#credits)', '[License](#license)']
-    },
-    { 
-        type: 'input',
-        name: 'installation',
-        message: 'What are the steps required to install your project?'
-    },
+    // { 
+    //     type: 'checkbox',
+    //     name: 'tableOfContents',
+    //     message: 'Which sections would you like to add to the table of contents?',
+    //     choices: ['[Installation](#installation)', '[Usage](#usage)', '[Credits](#credits)', '[License](#license)']
+    // },
+    // { 
+    //     type: 'input',
+    //     name: 'installation',
+    //     message: 'What are the steps required to install your project?'
+    // },
     {
         type: 'input',
         name: 'usage',

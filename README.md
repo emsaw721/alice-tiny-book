@@ -1,16 +1,16 @@
-# project title 
-  ![Github license](https://img.shields.io/badge/license-UPL-ff69b4.svg)
+# Generated README  
+  ![Github license](https://img.shields.io/badge/license-MIT-ff69b4.svg)
   ## Description
-  descritopn
+  This is a generated README created through node.js
   ##Table of Contents 
-  
+  undefined
   ##Installation 
-  steps
+  undefined
   ## Usage
-  scgrwagh
+  Here I will add instructions and then perhaps a video or some screenshots of the project working.
   ## Credits
-  hgfergrhsteg
+  
   ## How to Contribute
   
   ## License
-  <a href= 'https://opensource.org/licenses/UPL/'> UPL</a> 
+  <a href= 'https://opensource.org/licenses/MIT/'> MIT</a> 
