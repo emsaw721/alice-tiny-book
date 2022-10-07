@@ -1,21 +1,18 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
-// const generateMarkdown = require('./utils/generateMarkdown')
+const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require('fs'); 
 
 // TODO: Create an array of questions for user input
-const promptQuestions = () => {
+const promptQuestions = questionsData => {
 
-const questions = [];
 
-if (!questions) {
-    questions = []; 
-}
 return inquirer 
 .prompt([
     {
         type: 'input', 
-        name: 'name',
+        name: 'title',
         message: 'What is the title of the project? (Required)',
         validate: nameInput => {
             if (nameInput) {
@@ -56,7 +53,7 @@ return inquirer
         name: 'installation',
         message: 'What are the steps required to install your project?'
     },
-    {
+    { // maybe make this one the pre-filled option 
         type: 'input',
         name: 'usage',
         message: 'Provide instructions and examples for use. Include screenshots as needed (Required).',
@@ -75,17 +72,11 @@ return inquirer
         message: 'Provide names of any collaborators, third-party assets that require attribution, or any consulted tutorials.'
     },
     {
-        type: 'input',
+      
+        type: 'checkbox',
         name: 'license',
-        message: 'Please link your license here (Required).',
-        validate: nameInput => {
-            if (nameInput) {
-                return true
-            } else {
-                console.log('Please enter a link to license.')
-                return false 
-            }
-        }
+        message: 'Which license would you like to add to the README (Required)?',
+        choices: ['MIT', 'another', 'another', 'another', 'another']
     },
     {
         type: 'input',
@@ -94,18 +85,20 @@ return inquirer
     },
 
 ])
-.then(readMeData => {
-    questions.push(readMeData);
-})
+.then(questionsData => {
+    console.log(questionsData)
+    const readmeTemplate= generateMarkdown(questionsData); 
+    fs.writeFile('readme.md', readmeTemplate, (err)=> {
+        // file name, information to go into name, error function
+        if (err) {
+           return console.log('error', err)
+        }
+        console.log('File saved!')
+    })
+}) .catch(err => {
+    console.log(err)
+}); 
 };
 
-promptQuestions(); 
+promptQuestions();
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
