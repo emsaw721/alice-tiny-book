@@ -69,7 +69,7 @@ return inquirer
         type: 'checkbox',
         name: 'license',
         message: 'Which license would you like to add to the README?',
-        choices: ['MIT', 'afl-3.0', 'cc', 'wtfpl', 'ecl-2.0'], 
+        choices: ['MIT', 'AFL-3.0', 'Artistic-2.0', 'ZPL-2.1', 'ECL-2.0'], 
         
     },
     {

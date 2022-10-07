@@ -1,16 +1,16 @@
-# ghrteawq 
-  ![Github license](https://img.shields.io/badge/license-MIT-ff69b4.svg)
+# Title 
+  ![Github license](https://img.shields.io/badge/license-AFL-3.0-ff69b4.svg)
   ## Description
-  HTEAWEQWAFSD
+  some description is going to be here
   ##Table of Contents 
-  
+  [Installation](#installation),[Usage](#usage),[Credits](#credits),[License](#license)
   ##Installation 
-  AWHRTWEADSF
+  
   ## Usage
-  RHTJHTDF
+  examples and pictures 
   ## Credits
-  rhfzhtgde
+  
   ## How to Contribute
-  waehjngdtz
+  
   ## License
-  <a href= 'https://choosealicense.com/licenses/MIT/'> MIT</a> 
+  <a href= 'https://opensource.org/licenses/AFL-3.0/'> AFL-3.0</a> 
