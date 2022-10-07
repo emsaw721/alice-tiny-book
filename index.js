@@ -75,7 +75,7 @@ return inquirer
       
         type: 'checkbox',
         name: 'license',
-        message: 'Which license would you like to add to the README (Required)?',
+        message: 'Which license would you like to add to the README?',
         choices: ['MIT', 'another', 'another', 'another', 'another']
     },
     {
@@ -89,7 +89,7 @@ return inquirer
     console.log(questionsData)
     const readmeTemplate= generateMarkdown(questionsData); 
     fs.writeFile('readme.md', readmeTemplate, (err)=> {
-        // file name, information to go into name, error function
+        // fs- interact with file system, file name, information to go into name, error function
         if (err) {
            return console.log('error', err)
         }
