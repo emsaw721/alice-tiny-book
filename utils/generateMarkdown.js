@@ -6,10 +6,10 @@ function generateMarkdown(data) {
   ![Github license](https://img.shields.io/badge/license-${data.license}-ff69b4.svg)
   ## Description
   ${data.description}
-  ##Table of Contents 
-  ${data.tableOfContents}
-  ##Installation 
-  ${data.installation}
+  // ##Table of Contents 
+  // {data.tableOfContents} make sure to add back $
+  // ##Installation 
+  // {data.installation}  make sure to add back $
   ## Usage
   ${data.usage}
   ## Credits
