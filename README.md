@@ -1,14 +1,9 @@
-# Title 
-  ## Description
+# some project 
+  ![license]('https://img.shields.io/badge/license-MIT-ff69b4')
+  ## Here is a description
   ## 
   ## 
-  ## Screenshots
+  ## Instructions and screenshots
   ## 
   ## 
-  ## MIT
-  function renderLicenseBadge(license) {
-  ![license]('https://img.shields.io/badge/license-${data.license}-ff69b4')
-}
-   function renderLicenseLink(license) {
-  
-} 
+  ## MIT 
