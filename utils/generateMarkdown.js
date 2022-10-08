@@ -30,7 +30,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
+  If you have any questions, you can reach me at ${data.questions}. 
 
   ## How to Contribute
   ${data.howToContribute}

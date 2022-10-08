@@ -44,8 +44,8 @@ return inquirer
         type: 'input',
         name: 'usage',
         message: 'Provide instructions and examples for use. Include screenshots as needed (Required).',
-        validate: nameInput => {
-            if (nameInput) {
+        validate: usageInput => {
+            if (usageInput) {
                 return true
             }else{
                 console.log('Please provide instructions and examples for use.')
@@ -67,16 +67,9 @@ return inquirer
       
         type: 'checkbox',
         name: 'license',
-        message: 'Which license would you like to add to the README(Required)?',
+        message: 'Which license would you like to add to the README?',
         choices: ['MIT', 'Fair', 'UPL', 'W3C', 'GPL'], 
-        validate: choicesInput => {
-            if (choicesInput){
-                return true
-            } else {
-                console.log('Please select a license choice. You can do this using the up/down arrows and the space bar to select. Press enter when done.')
-                return false 
-            }
-        }
+   
         
     },
     {
@@ -91,16 +84,10 @@ return inquirer
         default: 'npm test'
     },
     {
-        type: 'checkbox',
+        type: 'input',
         name: 'questions',
-        message:'Do you have any questions?',
-        choices: ['YES', 'NO'],
+        message:'Enter Github username and email for questions contact.',
     },
-    {
-        type: prev => prev == 'YES',
-        name: 'email',
-        message: 'For questions about this generated README, you can email me at fakeemail@fake.com'
-    }
 
 ])
 .then(questionsData => {
