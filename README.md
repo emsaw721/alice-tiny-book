@@ -1,16 +1,16 @@
-# grheathjea 
+# Title of Project 
   ![Github license](https://img.shields.io/badge/license-MIT-ff69b4.svg)
   ## Description
-  jteahje
+  Description
   ## Installation 
-  hteajt
+  Some steps 
   ## Usage
-  jnyrshterwer
+  First step written here, testing for image placement. ![Alt text](./assets/images/tiny-opening.png)
   ## Future Iterations 
-  njhtersdzbndg
+  Something
   ## Credits
-  ftewarhejnyr
+  hellp
   ## How to Contribute
-  jytesheta
+  grehatah
   ## License
   <a href= 'https://opensource.org/licenses/MIT/'> MIT</a> 
