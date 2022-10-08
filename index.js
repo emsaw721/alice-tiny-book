@@ -85,18 +85,12 @@ return inquirer
         inactive: 'no'
     },
     {
-        type: 'toggle',
+        type: '',
         name: 'questions',
         message:'Do you have any questions?',
-        initial: true,
-        active: 'yes',
-        inactive: 'no',
-        onRender() {
-            if (value == true) {
-                this.msg = ('If you have any questions, you can email me directly at fakeemail@fake.com')
-            }
-        }
+        initial: 'If you have any questions, you can email me at fakeemail@fake.com',
         
+        // somehow need to figure out how to get the initial message to display when select yes
 
     }
 
