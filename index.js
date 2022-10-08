@@ -67,8 +67,16 @@ return inquirer
       
         type: 'checkbox',
         name: 'license',
-        message: 'Which license would you like to add to the README?',
+        message: 'Which license would you like to add to the README(Required)?',
         choices: ['MIT', 'Fair', 'UPL', 'W3C', 'GPL'], 
+        validate: choicesInput => {
+            if (choicesInput){
+                return true
+            } else {
+                console.log('Please select a license choice. You can do this using the up/down arrows and the space bar to select. Press enter when done.')
+                return false 
+            }
+        }
         
     },
     {
@@ -77,21 +85,21 @@ return inquirer
         message: 'If your app or package allows for contributors, include the guidlines for how they may do so.'
     },
     {
-        type: 'toggle',
+        type: 'input',
         name: 'tests',
-        message: 'Some message here about tests that you have no idea what that means',
-        initial: true, 
-        active: 'yes',
-        inactive: 'no'
+        message: 'Would you like to run a test?',
+        default: 'npm test'
     },
     {
-        type: '',
+        type: 'checkbox',
         name: 'questions',
         message:'Do you have any questions?',
-        initial: 'If you have any questions, you can email me at fakeemail@fake.com',
-        
-        // somehow need to figure out how to get the initial message to display when select yes
-
+        choices: ['YES', 'NO'],
+    },
+    {
+        type: prev => prev == 'YES',
+        name: 'email',
+        message: 'For questions about this generated README, you can email me at fakeemail@fake.com'
     }
 
 ])
