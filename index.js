@@ -76,6 +76,29 @@ return inquirer
         name: 'howToContribute',
         message: 'If your app or package allows for contributors, include the guidlines for how they may do so.'
     },
+    {
+        type: 'toggle',
+        name: 'tests',
+        message: 'Some message here about tests that you have no idea what that means',
+        initial: true, 
+        active: 'yes',
+        inactive: 'no'
+    },
+    {
+        type: 'toggle',
+        name: 'questions',
+        message:'Do you have any questions?',
+        initial: true,
+        active: 'yes',
+        inactive: 'no',
+        onRender() {
+            if (value == true) {
+                this.msg = ('If you have any questions, you can email me directly at fakeemail@fake.com')
+            }
+        }
+        
+
+    }
 
 ])
 .then(questionsData => {
