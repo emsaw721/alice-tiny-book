@@ -8,6 +8,8 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Usage
   ${data.usage}
+  ## Future Iterations 
+  ${data.futureIterations}
   ## Credits
   ${data.credits}
   ## How to Contribute

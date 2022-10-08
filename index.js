@@ -17,7 +17,7 @@ return inquirer
             if (nameInput) {
                 return true; 
             } else {
-                console.log('Please enter a project title with the following format: #<project-title>')
+                console.log('Please enter a project title.')
                 return false; 
             }
         }
@@ -52,6 +52,11 @@ return inquirer
                 return false
             }
         }
+    },
+    {
+        type: 'input',
+        name: 'futureIterations',
+        message: 'What will future iterations of this project look like or what are some features that you would like to add in the future?'
     },
     {
         type: 'input',
